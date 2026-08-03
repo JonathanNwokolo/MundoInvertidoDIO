@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo Invertido | Semana Front-end</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="light-theme" aria-label="O site está utilizando o tema Mundo Normal">
+    <audio id="music" autoplay loop>
+      <source src="assets/musics/normal-world.mpeg" type="audio/mpeg" />
+    </audio>
+
+    <header class="page-header">
+      <div class="container header-top">
+        <div class="brand-block">
+          <img class="brand-logo" src="assets/images/banner/logo.svg" alt="Logo Mundo Invertido" />
+          <span class="brand-status">Mundo Normal</span>
+        </div>
+        <button id="switch-theme-button" class="btn-theme" type="button" aria-label="Mudar para Mundo Invertido">Mudar para Mundo Invertido</button>
+      </div>
+
+      <section class="hero container">
+        <div class="hero-copy">
+          <h1>Mundo Invertido</h1>
+          <p>
+            Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo Invertido é incerto, repleto de obstáculos, mistérios e grandes perigos.
+          </p>
+          <a class="btn btn-primary" href="#section-form">Entrar no Mundo Invertido</a>
+        </div>
+
+        <div class="hero-visual">
+          <img class="hero-image hero-bike" src="assets/images/characters/kids-on-the-bike.svg" alt="Crianças de bicicleta" />
+          <img class="hero-image hero-monster" src="assets/images/characters/inverted-world-monster.svg" alt="Monstro do Mundo Invertido" />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="section-inverted-world" class="section section-story container">
+        <div class="section-left">
+          <span class="section-tag">O Mundo Invertido</span>
+          <h2>Uma cópia sombria do nosso mundo</h2>
+          <p>
+            O Mundo Invertido é uma versão distorcida da nossa realidade, com criaturas horrendas, tempestades intensas e forças malignas lideradas por Vecna.
+          </p>
+        </div>
+        <div class="section-right">
+          <img src="assets/images/content/inverted-world.png" alt="Ilustração do Mundo Invertido" />
+        </div>
+      </section>
+
+      <section id="section-trailer" class="section section-trailer container">
+        <div class="section-right video-frame">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/SJ9EFhQ3ANQ?controls=0"
+            title="Trailer Stranger Things Vol. 4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="section-left">
+          <span class="section-tag">Stranger Things</span>
+          <h2>Stranger Things Vol. 4</h2>
+          <p>
+            Os heróis enfrentam desafios maiores do que nunca. Decisões importantes vão mudar o destino de Hawkins e trazer o Mundo Invertido para nosso mundo.
+          </p>
+        </div>
+      </section>
+
+      <section id="section-gallery" class="section section-gallery container">
+        <div class="gallery-header">
+          <span class="section-tag">Série</span>
+          <h2>A segunda série mais assistida da Netflix</h2>
+        </div>
+        <ul class="gallery-grid" role="list">
+          <li class="gallery-item"><img src="assets/images/content/serie-image-01.png" alt="Imagem Vecna" /></li>
+          <li class="gallery-item"><img src="assets/images/content/serie-image-02.png" alt="Personagens da série" /></li>
+          <li class="gallery-item"><img src="assets/images/content/serie-image-03.png" alt="Eleven assustada" /></li>
+        </ul>
+      </section>
+
+      <section id="section-form" class="section section-form container">
+        <div class="form-copy">
+          <span class="section-tag">Clube Dungeons & Dragons</span>
+          <h2>O clube de D&D mais famoso de Hawkins está recrutando</h2>
+          <p>
+            Para deter Vecna, os heróis precisam de você. Se você é corajoso e gosta de desafios, esta é a sua chance de entrar para a nova campanha.
+          </p>
+        </div>
+
+        <div class="form-card">
+          <div class="form-card-top"></div>
+          <h3>Entre para o clube e viva experiências de outro mundo</h3>
+          <form id="signup-form">
+            <label for="txtName">Nome Completo</label>
+            <input type="text" id="txtName" name="name" placeholder="Digite seu nome" required />
+
+            <label for="txtEmail">E-mail</label>
+            <input type="email" id="txtEmail" name="email" placeholder="Digite seu email" required />
+
+            <label for="txtLevel">Level</label>
+            <input type="text" id="txtLevel" name="level" placeholder="Seu nível" required />
+
+            <label for="txtCharacter">Personagem</label>
+            <textarea id="txtCharacter" name="character" rows="5" placeholder="Seu personagem favorito" required></textarea>
+
+            <button type="submit" class="btn btn-secondary">Me inscrever</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer container">
+      <div>
+        <p>Projeto construído para fins didáticos com HTML, CSS e JavaScript aprendidos na DIO.</p>
+      </div>
+      <div class="footer-brand">
+        <img src="assets/images/footer/logo.svg" alt="Logo Mundo Invertido" />
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
